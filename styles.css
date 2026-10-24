@@ -1,0 +1,146 @@
+
+/* Page background and default text */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f5e9ff);
+    color: #26324a;
+    line-height: 1.7;
+}
+
+/* Main profile card */
+.profile-card {
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(45, 40, 100, 0.14);
+}
+
+/* Profile header */
+.profile-header {
+    padding: 40px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #4338ca, #7c3aed);
+    color: white;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #5b35c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 8px 0;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: #e9e4ff;
+    margin: 5px 0 15px;
+}
+
+.intro {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* About, skills and contact sections */
+.section {
+    margin: 0 30px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e8eaf2;
+}
+
+h2 {
+    margin-top: 0;
+    color: #5135b5;
+    font-size: 23px;
+}
+
+.section p {
+    color: #596579;
+}
+
+/* Skills displayed as individual tags */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    padding: 7px 15px;
+    border-radius: 20px;
+    background-color: #eee9ff;
+    color: #5135b5;
+    border: 1px solid #ddd3ff;
+    font-size: 14px;
+}
+
+/* Contact button */
+.contact-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 11px 22px;
+    border-radius: 8px;
+    background-color: #5135b5;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.contact-button:hover {
+    background-color: #37218a;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    text-align: center;
+    color: #7b8496;
+    font-size: 13px;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .profile-header {
+        padding: 30px 18px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .section {
+        margin: 0 20px;
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+}
